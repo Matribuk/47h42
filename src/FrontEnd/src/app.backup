@@ -1,0 +1,40 @@
+import Router from './components/Router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
+interface ButtonProps {
+  backgroundColor: string;
+  color: string;
+  children: React.ReactNode;
+}
+
+function Button(props: ButtonProps) {
+  const handleClick = () => {
+    window.open("", "Selection de blocs", "width=600,height=400");
+  };
+
+  return (
+    <button style={{ backgroundColor: props.backgroundColor, color: props.color }} onClick={handleClick}>
+      <FontAwesomeIcon icon={faHome} /> {props.children}
+    </button>
+  );
+}
+
+/*
+<div className="App">
+<VideoPlayer />
+</div>
+<BlockSet />
+<Button backgroundColor="#012949" color="#fff">Projet 1</Button>
+<canvas id="c" width={1920} height={1080} />
+*/
+
+ function App(): JSX.Element {
+   return (
+     <div className="App">
+        <Router />
+    </div>
+  );
+}
+
+export default App;

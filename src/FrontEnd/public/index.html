@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: #353635;
+        position: relative;
+        position: top;
+      }
+      .header {
+        background-color: #272727;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        height: 120px;
+      }
+    </style>
+    <!--icon for the app-->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#525252" />
+    <!--description name-->
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--logo for ios devices-->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>47H42</title>
+  </head>
+  <body>
+    <script src="fabric.js"></script>
+    <div class="header">
+      <h1>47h42</h1>
+      <p style="float: inline-end;">
+        <script>
+          var date = new Date();
+          document.write(date.toLocaleDateString());
+        </script>
+      </p>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+  </body>
+</html>
